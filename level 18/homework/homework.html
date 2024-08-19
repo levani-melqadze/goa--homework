@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+</head>
+<body>
+    <form>
+        <fieldset style="width: 300px;">
+            <legend>Personal Details</legend>
+
+            <label for="salutation">Salutation</label>
+            <select id="salutation" name="salutation">
+                <option value="none">--None--</option>
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="miss">Miss</option>
+                <option value="dr">Dr.</option>
+            </select>
+            <br><br>
+
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname">
+            <br><br>
+
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname">
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" placeholder="dd/mm/yyyy">
+            <br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="30"></textarea>
+            <br><br>
+
+            <input type="submit" value="Submit">
+            <center><h3><a href = "indec.html" >this is first page  click me to move second page!</a></h3><center>
+       
+        </fieldset>
+    </form>
+</body>
+</html>
