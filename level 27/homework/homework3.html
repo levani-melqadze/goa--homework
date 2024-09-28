@@ -16,18 +16,61 @@
             background-color: #4caf50;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         section {
             background-color: #ffffff;
             border: 1px solid #dddddd;
-            padding: 15px;
+            padding: 20px;
             margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
             color: #4caf50;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -40,13 +83,62 @@
 
     <section>
         <h2>ჩემ შესახებ</h2>
-        <p> მიყვარს კალათბურთი.</p>
+        <p>მიყვარს კალათბურთი.</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/022/336/935/small/basketball-background-illustration-ai-generative-free-photo.jpg" alt="Picture of me">
     </section>
 
     <section>
         <h2>ჩემი ჰობი</h2>
-        <p>ჰობები, რომლებსაც ვაკეთებ თავისუფალ დროს: კალათბურთის თამაში,ეხბურთის,კითხვა .....</p>
+        <p>ჰობები, რომლებსაც ვაკეთებ თავისუფალ დროს: კალათბურთის თამაში, ფეხბურთი, კითხვა...</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/022/336/935/small/basketball-background-illustration-ai-generative-free-photo.jpg" alt="basketball photo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlLl7Ube9nrVCDvTsMrl2asFiNfNBYzc0A3Q&s" alt="football photo">
     </section>
+
+    <section>
+        <h2>ჩემი უნარები</h2>
+        <p>პროფესიონალური უნარები:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+
+            <li>Python</li>
+        
+        </ul>
+    </section>
+
+    <section>
+        <h2>ჩემი პროექტები</h2>
+        <p>აქ არის რამდენიმე პროექტი, რომლებზეც მე ვმუშაობდი:</p>
+        <ul>
+            <li>მანქანების ვებგვერდი</li>
+            <li>კალათბურთის სტატისტიკური სისტემა</li>
+            <li>ბლოგი</li>
+        </ul>
+    </section>
+
+<center><input type="button" value="want to know more a bout me?!" onclick="window.location.href='homework4.html';" style="background-color: aqua; color: black; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+</center>
+<section>
+        <h2>დამიკავშირდით</h2>
+        <p>დამიკავშირდით, თუ თქვენ გაქვთ რაიმე კითხვა:</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">სახელი:</label>
+            <input type="text" id="name" name="name" placeholder="თქვენი სახელი">
+
+            <label for="email">ელფოსტა:</label>
+            <input type="email" id="email" name="email" placeholder="თქვენი ელფოსტა">
+
+            <label for="message">შეტყობინება:</label>
+            <textarea id="message" name="message" rows="4" placeholder="თქვენი შეტყობინება"></textarea>
+
+            <button type="submit">გაგზავნა</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 ლევანი მელქაძე - ყველა უფლება დაცულია</p>
+    </footer>
 
 </body>
 </html>
+
