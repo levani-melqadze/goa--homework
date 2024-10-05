@@ -33,3 +33,24 @@ for item in non_fruits:
     fruits.remove(item)
 
 print(fruits)
+
+
+#
+
+
+initial_list = [3, 8, 15, 22, 37, 44, 57, 62, 73, 84, 91, 100, 2, 31, 16, 75, 42, 51, 66, 29]
+
+
+even_numbers = []
+odd_numbers = []
+
+
+for num in initial_list:
+    if num % 2 == 0:
+        even_numbers.append(num) 
+    else:
+        odd_numbers.append(num)  
+
+
+print("ლუწი რიცხვები:", even_numbers)
+print("კენტი რიცხვები:", odd_numbers)
