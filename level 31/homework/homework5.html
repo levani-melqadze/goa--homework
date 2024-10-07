@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი პირადი საიტი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(240, 240, 240);
+        }
+        header {
+            background-color: #4CAF50; /* Hex color for header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        .content {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .button {
+            background-color: rgb(255, 165, 0); /* RGB color for button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: rgb(255, 140, 0);
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>გამარჯობა! ეს არის ჩემი პირადი საიტი</h1>
+    <nav>
+        <a href="#about">შესახებ</a>
+        <a href="#gallery">გალერეა</a>
+        <a href="#audio">აუდიო</a>
+        <a href="#video">ვიდეო</a>
+        <a href="#contact">კონტაქტი</a>
+    </nav>
+</header>
+
+<div class="content">
+    <section id="about">
+        <h2>შესახებ</h2>
+        <p>მინდა გაგაცნოთ ჩემი პირადი ინფორმაცია და რაც მიყვარს.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>გალერეა</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="ფოტო 1">
+            <img src="image2.jpg" alt="ფოტო 2">
+            <img src="image3.jpg" alt="ფოტო 3">
+        </div>
+    </section>
+
+    <section id="audio">
+        <h2>აუდიო</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+            თქვენი ბრაუზერი არ უჭერს მხარს აუდიო ელემენტს.
+        </audio>
+    </section>
+
+    <section id="video">
+        <h2>ვიდეო</h2>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            თქვენი ბრაუზერი არ უჭერს მხარს ვიდეო ელემენტს.
+        </video>
+    </section>
+
+    <section>
+        <h2>ჩემი ინტერესები</h2>
+        <ul>
+            <li>კომპიუტერული მეცნიერება</li>
+            <li>მუსიკა</li>
+            <li>ვორქაუთი</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>სუფთა სტრუქტურირებული ინფორმაცია</h2>
+        <table>
+            <tr>
+                <th>სერვისი</th>
+                <th>ფასი</th>
+            </tr>
+            <tr>
+                <td>კონსულტაცია</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>ვებსაიტის შექმნა</td>
+                <td>$500</td>
+            </tr>
+        </table>
+    </section>
+
+    <button class="button">მეტი ინფორმაცია</button>
+</div>
+
+<footer>
+    <p>© 2024 ჩემი პირადი საიტი</p>
+</footer>
+
+</body>
+</html>

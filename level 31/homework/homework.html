@@ -1,0 +1,72 @@
+<!--stage 1-->
+
+<!--Hex ფერების სისტემა წარმოადგენს ფერის კოდს, რომელიც იყენებს რიცხვებს და ასოებს (0-9 და A-F) ფერის გამოსახატავად.-->
+
+<!--დადებითი მხარე: გამოყენებისას ფერი ზუსტად ისახება..
+აურყოფითი:თუ არ იცით როგორ მუშაობს, რთულია მისი წაკითხვა-->
+
+<!--RGB სისტემა იყენებს სამ ძირითად ფერს — წითელს, მწვანეს და ლურჯს. თითოეული ფერის ინტენსივობა განისაზღვრება 0-დან 255-მდე მნიშვნელობით.
+დადებითი:უფრო ზუსტი ფერების რეგულირების შესაძლებლობა.
+უარყოპიტი:უფრო გრძელი კოდია Hex-თან შედარებით.-->
+
+<!--stage 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            background-color: rgb(240, 240, 240);
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            color: #1e90ff;
+        }
+        img {
+            width: 155px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        input, button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 60%;
+        }
+        button {
+            background-color: rgb(0, 123, 255);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(0, 102, 204);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Welcome to the Simple Page</h2>
+
+    <img src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" alt="Image 1">
+    <input type="text" placeholder="Enter your name">
+    <button onclick="window.location.href='https://example.com';">Go to Example 1</button>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7rd-L1O08jT63q1yKavoQA200iJbxFbKzhg&s" alt="Image 2">
+    <input type="email" placeholder="Enter your email">
+    <button onclick="window.location.href='https://example.com';">Go to Example 2</button>
+
+    <img src="https://plus.unsplash.com/premium_photo-1673448391005-d65e815bd026?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG98ZW58MHx8MHx8fDA%3D" alt="Image 3">
+    <input type="password" placeholder="Enter your password">
+    <button onclick="window.location.href='https://example.com';">Go to Example 3</button>
+
+</body>
+</html>
+
+
+
