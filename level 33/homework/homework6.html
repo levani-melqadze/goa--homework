@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shindo Life Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        /* Header Section */
+        .header {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+        .header img {
+            height: 50px;
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+        .register-signin {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+        .register-signin button {
+            background-color: green;
+            color: white;
+            padding: 8px;
+            border: none;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .register-signin button:first-child {
+            background-color: blue;
+        }
+
+        /* Sidebar Section */
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Main Content */
+        .main {
+            margin-left: 220px; /* Space for the sidebar */
+            padding: 20px;
+        }
+
+        /* Navigation bar under the header */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f4b400;
+            padding: 10px;
+        }
+        .nav a {
+            margin: 0 15px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Content Section */
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .content h2 {
+            color: #0066cc;
+        }
+
+        /* Advertisement Section */
+        .ads {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .ads img {
+            width: 100%;
+            max-width: 728px;
+            height: auto;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#">Fandom Central</a>
+        <a href="#">Games</a>
+        <a href="#">Anime</a>
+        <a href="#">Movies</a>
+        <a href="#">TV</a>
+        <a href="#">Video</a>
+        <a href="#">Wikis</a>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <img src="shindo_logo.png" alt="Shindo Life Wiki Logo">
+        <h1>Shindo Life Wiki</h1>
+        <div class="register-signin">
+            <button>Sign In</button>
+            <button>Register</button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="#">Explore</a>
+        <a href="#">Game Items</a>
+        <a href="#">Game Mechanics</a>
+        <a href="#">Community</a>
+    </div>
+
+    <!-- Ads -->
+    <div class="main">
+        <div class="ads">
+            <img src="ad_banner.png" alt="Ad Banner">
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h2>Pyromania</h2>
+            <p>Pyromania is one of the seventeen elements in Shindo Life. It is a true limited element that can only be obtained through specific events or boss drops.</p>
+        </div>
+
+        <!-- Another Ad -->
+        <div class="ads">
+            <img src="ad_side_banner.png" alt="Ad Banner">
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Shindo Life Wiki - All rights reserved</p>
+    </div>
+
+</body>
+</html>
