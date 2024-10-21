@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Collapse Comparison</title>
+    <style>
+        .separate-table {
+            border-collapse: separate;
+            border-spacing: 10px;
+        }
+        .collapse-table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Separate Borders</h3>
+    <table class="separate-table">
+        <tr>
+            <td>Row 1</td>
+            <td>Row 1</td>
+        </tr>
+        <tr>
+            <td>Row 2</td>
+            <td>Row 2</td>
+        </tr>
+    </table>
+
+    <h3>Collapsed Borders</h3>
+    <table class="collapse-table">
+        <tr>
+            <td>Row 1</td>
+            <td>Row 1</td>
+        </tr>
+        <tr>
+            <td>Row 2</td>
+            <td>Row 2</td>
+        </tr>
+    </table>
+</body>
+</html>
