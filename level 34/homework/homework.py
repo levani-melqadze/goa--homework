@@ -37,7 +37,7 @@ def text_length():
     text = input("შეიყვანე ტექსტი: ")
     return len(text)
 
-# ფუნქციების გამოძახება
+
 square_of_number()
 check_number()
 celsius_to_fahrenheit()
