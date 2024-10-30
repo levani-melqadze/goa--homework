@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML დავალებები</title>
+</head>
+<body>
+
+    <!-- 1) სხვადასხვა ტექსტის დეკორაციით პარაგრაფები -->
+    <p style="text-decoration: underline;">ეს პარაგრაფი ხაზგასმულია.</p>
+    <p style="text-decoration: line-through;">ეს პარაგრაფი გადახაზულია.</p>
+    <p style="text-decoration: overline;">ეს პარაგრაფი ზემოდან ხაზგასმულია.</p>
+    <p style="text-decoration: underline overline;">ეს პარაგრაფი ორივე ხაზითაა გამოყოფილი.</p>
+
+    <!-- 2) სხვადასხვა შრიფტის ზომით პარაგრაფები -->
+    <p style="font-size: 12px;">ეს ტექსტი პატარაა.</p>
+    <p style="font-size: 16px;">ეს ტექსტი საშუალო ზომისაა.</p>
+    <p style="font-size: 24px;">ეს ტექსტი დიდია.</p>
+    <p style="font-size: 32px;">ეს ტექსტი ძალიან დიდია.</p>
+
+    <!-- 3) სხვადასხვა ფერებით (RGB) პარაგრაფები -->
+    <p style="color: rgb(255, 0, 0);">წითელი ტექსტი</p>
+    <p style="color: rgb(0, 255, 0);">მწვანე ტექსტი</p>
+    <p style="color: rgb(0, 0, 255);">ლურჯი ტექსტი</p>
+    <p style="color: rgb(255, 255, 0);">ყვითელი ტექსტი</p>
+
+    <!-- 4) სხვადასხვა ფერებით (HEX) პარაგრაფები -->
+    <p style="color: #FF5733;">ნარინჯისფერი ტექსტი</p>
+    <p style="color: #33FF57;">მწვანე ტექსტი</p>
+    <p style="color: #3357FF;">ლურჯი ტექსტი</p>
+    <p style="color: #FF33A6;">ვარდისფერი ტექსტი</p>
+
+    <!-- 5) სურათები სხვადასხვა სტილით -->
+    <img src="img1.jpg" alt="Image 1" style="width:100px; border:2px solid black;">
+    <img src="img2.jpg" alt="Image 2" style="width:120px; border-radius:10px;">
+    <img src="img3.jpg" alt="Image 3" style="width:140px; opacity:0.8;">
+    <img src="img4.jpg" alt="Image 4" style="width:160px; border: 5px dotted blue;">
+    <img src="img5.jpg" alt="Image 5" style="width:180px; box-shadow: 5px 5px 10px gray;">
+
+    <!-- 6) ცხრილი მონაცემებით -->
+    <table border="1" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <tr>
+            <th>სახელი</th>
+            <th>ასაკი</th>
+            <th>ქალაქი</th>
+            <th>პროფესია</th>
+        </tr>
+        <tr>
+            <td>გიორგი</td>
+            <td>25</td>
+            <td>თბილისი</td>
+            <td>პროგრამისტი</td>
+        </tr>
+        <tr>
+            <td>ნინო</td>
+            <td>30</td>
+            <td>ბათუმი</td>
+            <td>დიზაინერი</td>
+        </tr>
+    </table>
+
+    <!-- 7) სარეგისტრაციო ფორმა -->
+    <form action="/register" method="post" style="margin-top: 20px;">
+        <label for="username">მომხმარებლის სახელი:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="submit" value="რეგისტრაცია">
+    </form>
+
+    <!-- 8) Hover-ით პატარა ანიმაცია -->
+    <button style="padding: 10px; background-color: lightblue; border: none; margin-top: 20px;">
+        <span style="transition: transform 0.3s;">დამაჭირე</span>
+    </button>
+    <style>
+        button:hover span {
+            transform: scale(1.2);
+        }
+    </style>
+
+</body>
+</html>
