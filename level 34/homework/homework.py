@@ -3,6 +3,7 @@ def sum_of_two_numbers():
     num2 = float(input("შეიყვანე მეორე რიცხვი: "))
     print("ჯამი:", num1 + num2)
 
+sum_of_two_numbers()
 def square_of_number():
     num = float(input("შეიყვანე რიცხვი: "))
     print("რიცხვის კვადრატი არის:", num ** 2)
@@ -38,8 +39,8 @@ def text_length():
     return len(text)
 
 
-square_of_number()
-check_number()
-celsius_to_fahrenheit()
-print("ტექსტის სიგრძე:", text_length())
+# square_of_number()
+# check_number()
+# celsius_to_fahrenheit()
+# print("ტექსტის სიგრძე:", text_length())
 

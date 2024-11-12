@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7-გვერდიანი საიტი</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>/* საერთო სტილები */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    
+    /* მთავარი განყოფილება */
+    main {
+      padding: 20px;
+    }
+    
+    /* სექციები */
+    section {
+      margin-bottom: 30px;
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    section h2 {
+      color: #333;
+    }
+    
+    section h3 {
+      color: #666;
+    }
+    
+    ul {
+      padding-left: 20px;
+    }
+    
+    ul li {
+      list-style-type: square;
+    }
+    
+    /* ცხრილი */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    
+    table th {
+      background-color: #333;
+      color: white;
+    }
+    
+    table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    table tr:hover {
+      background-color: #f1f1f1;
+    }
+    
+    /* ფილმები და მუსიკა */
+    .movie, .player {
+      margin-top: 20px;
+    }
+    
+    .movie a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .movie a:hover {
+      color: #007bff;
+    }
+    
+    /* HTML სასწავლო სექცია */
+    .lesson code {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: monospace;
+      display: block;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    
+    /* ფორმა */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    form label {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    
+    form select, form input[type="text"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    form button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+    
+    form button:hover {
+      background-color: #555;
+    }
+    
+    /* ინფორმაცია საქართველოს შესახებ */
+    .georgia-info ul {
+      padding-left: 20px;
+    }
+    
+    .georgia-info ul li {
+      list-style-type: square;
+      color: #333;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    </style>
+  
+  
+    <header>
+    <nav>
+      <ul>
+        <li><a href="main.html">მთავარი</a></li>
+        <li><a href="tech.html">ტექნოლოგია</a></li>
+        <li><a href="movies.html">ფილმები</a></li>
+        <li><a href="sports.html">სპორტი</a></li>
+        <li><a href="art.html">ხელოვნება</a></li>
+        <li><a href="music.html">მუსიკა</a></li>
+        <li><a href="travel.html">მოგზაურობა</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Table with user information -->
+    <section>
+      <h2>მომხმარებლის მონაცემები</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>მომხმარებელი</th>
+            <th>ელ. ფოსტა</th>
+            <th>ტელეფონი</th>
+            <th>ქვეყანა</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ლუკა ლორთქიფანიძე</td>
+            <td>luka@example.com</td>
+            <td>555-123456</td>
+            <td>საქართველო</td>
+          </tr>
+          <!-- სხვა მონაცემები -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Movie section -->
+    <section class="movie">
+      <h2>ფილმის სახელი</h2>
+      <p>აღწერა...</p>
+      <a href="trailer-link">გამოიცადე ტრეილერი</a>
+    </section>
+
+    <!-- Music player -->
+    <section class="player">
+      <h2>თქვენი საყვარელი სიმღერა</h2>
+      <audio controls>
+        <source src="song.mp3" type="audio/mp3">
+        თქვენს ბრაუზერს არ მხარს უჭერს აუდიო.
+      </audio>
+    </section>
+
+    <!-- HTML learning section -->
+    <section class="lesson">
+      <h2>HTML-ს საფუძვლები</h2>
+      <p>HTML არის_markup_ ენა, რომელიც გამოიყენება ვებსაიტების შექმნისთვის.</p>
+      <pre>
+        <code>
+          &lt;h1&gt;მთავარი სათაური&lt;/h1&gt;
+        </code>
+      </pre>
+    </section>
+
+    <!-- GOAS registration form -->
+    <section class="registration-form">
+      <form>
+        <label for="study-time">სწავლა კვირაში:</label>
+        <select id="study-time" name="study-time" onchange="updatePrice()">
+          <option value="5">5 საათი</option>
+          <option value="10">10 საათი</option>
+          <option value="15">15 საათი</option>
+        </select>
+        
+        <label for="price">ფასი:</label>
+        <input type="text" id="price" name="price" disabled>
+      
+        <button type="submit">რეგისტრაცია</button>
+      </form>
+    </section>
+
+    <!-- Georgia info -->
+    <section class="georgia-info">
+      <h2>საქართველოს ისტორია</h2>
+      <p>საქართველო უძველესი ისტორიის ქვეყანა...</p>
+      <h3>ღირსშესანიშნაობები</h3>
+      <ul>
+        <li>თეთრი ტაძარი</li>
+        <li>ყაზბეგი</li>
+        <li>უშგული</li>
+      </ul>
+    </section>
+
+    <!-- Table with leaders and their members -->
+    <section>
+      <h2>რაზმლის ლიდერები და წევრები</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ლიდერი</th>
+            <th>წევრები</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ლიდერი 1</td>
+            <td>წევრი 1, 2, 3, 4, 5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Goas features section -->
+    <section>
+      <h2>Goas სისტემაში ახალი ფუნქციები</h2>
+      <ul>
+        <li>ახალი კურსების დამატება</li>
+        <li>დაზუსტებული ფასები</li>
+      </ul>
+    </section>
+
+    <!-- Favorite character section -->
+    <section>
+      <h2>ჩემი საყვარელი პერსონაჟი</h2>
+      <p>ეს არის <strong>პერსონაჟის სახელი</strong>. მას აქვს მრავალი საინტერესო თვისება...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 ყველა უფლება დაცულია</p>
+  </footer>
+
+  <!-- JavaScript to update price based on selection -->
+  <script>
+    function updatePrice() {
+      var studyTime = document.getElementById("study-time").value;
+      var price = document.getElementById("price");
+
+      // Set price based on selected study time (this is just an example)
+      if (studyTime == "5") {
+        price.value = "50 ლარი";
+      } else if (studyTime == "10") {
+        price.value = "100 ლარი";
+      } else if (studyTime == "15") {
+        price.value = "150 ლარი";
+      }
+    }
+  </script>
+</body>
+</html>
