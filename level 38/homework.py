@@ -28,3 +28,7 @@ def letter_position(name):
 
 def greet():
     return "გამარჯობა! 😉"
+
+
+for i in range(5):
+    print("I love you")

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click effect</title>
+    <style>
+        .click-box {
+            width: 200px;
+            height: 200px;
+            background-color: #8e44ad;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .click-box:active {
+            width: 250px;
+            height: 250px;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="click-box">Click me</div>
+</body>
+</html>
