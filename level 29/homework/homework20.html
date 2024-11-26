@@ -1,34 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"> 
-    <style>
-        body {
-            background-color: red; 
-            color: darkblue; 
-        }
-        ul {
-            text-align: right; 
-        }
-    </style>
+    <meta charset="utf-8">
+    <title>Animated Heart Shape</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-    
-    <h1>Welcome to My Website</h1>
-    <p>This is a sample paragraph.</p>
-
-    <footer style="color: green;"> 
-        Footer content here
-    </footer>
+    <div class="heart"></div>
+    <div class="valentine">
+        <center><a href="https://youtu.be/2oW_k0UrKZM" target="_blank" aria-label="Watch Valentine video">😄</a></center> 
+    </div>
 </body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: radial-gradient(#e80202, white);
+    }
+
+    .heart {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background: #e80202;
+        transform: rotate(45deg);
+        box-shadow: 30px 30px 200px rgba(0, 0, 0, .5);
+        animation: animate 1s linear infinite;
+    }
+
+    .heart::before, .heart::after {
+        content: '';
+        position: absolute;
+        background: #e80202;
+    }
+
+    .heart::before {
+        top: -100px;
+        width: 200px;
+        height: 200px;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+
+    .heart::after {
+        left: -100px;
+        width: 100px;
+        height: 200px;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+    }
+
+    @keyframes animate {
+        0% { transform: rotate(45deg) scale(1); }
+        20% { transform: rotate(45deg) scale(.8); }
+        40% { transform: rotate(45deg) scale(1.5); }
+        60% { transform: rotate(45deg) scale(1); }
+        80% { transform: rotate(45deg) scale(1.3); }
+        100% { transform: rotate(45deg) scale(1); }
+    }
+
+    .valentine {
+        position: fixed;
+        top: 45px;
+        left: 10px;
+        background: #e80202;
+        font-family: verdana;
+        padding: 5px;
+        border-radius: 5px;
+        animation: valentine 0.5s linear infinite;
+    }
+
+    .valentine a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 100%;
+    }
+
+    @keyframes valentine {
+        0% { transform: scaleX(1); }
+        50% { transform: scaleX(.95); }
+        100% { transform: scaleX(1); }
+    }
+</style>
 </html>
