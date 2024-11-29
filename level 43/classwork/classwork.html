@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Summary</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+  
+    .container {
+      display: flex;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    
+   
+    .result-box {
+      background: linear-gradient(180deg, #6d5dfc, #867dfc);
+      color: white;
+      padding: 40px;
+      text-align: center;
+      width: 50%;
+    }
+    
+    .result-box h2 {
+      margin: 0 0 20px;
+    }
+    
+    .score-circle {
+      background: white;
+      color: #6d5dfc;
+      width: 120px;
+      height: 120px;
+      margin: 20px auto;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      font-weight: bold;
+      position: relative;
+    }
+    
+    .score-circle span {
+      font-size: 14px;
+      position: absolute;
+      bottom: 10px;
+    }
+    
+    .status {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    
+    .description {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    
+  
+    .summary-box {
+      padding: 40px;
+      width: 50%;
+    }
+    
+    .summary-box h2 {
+      margin: 0 0 20px;
+    }
+    
+    .score-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .score-item span {
+      font-size: 14px;
+    }
+    
+    .reaction {
+      color: #f57b8a;
+    }
+    
+    .memory {
+      color: #facd6e;
+    }
+    
+    .verbal {
+      color: #67b7f5;
+    }
+    
+    .visual {
+      color: #9b88d5;
+    }
+    
+    button {
+      background: #4e4cea;
+      color: white;
+      padding: 10px 20px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    
+    button:hover {
+      background: #3737e6;
+    }
+    </style>
+    <div class="container">
+   
+    <div class="result-box">
+      <h2>Your Result</h2>
+      <div class="score-circle">
+        <p>76</p>
+        <span>of 100</span>
+      </div>
+      <p class="status">Great</p>
+      <p class="description">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+
+    
+    <div class="summary-box">
+      <h2>Summary</h2>
+      <div class="score-item reaction">
+        <span>Reaction</span>
+        <span>80 / 100</span>
+      </div>
+      <div class="score-item memory">
+        <span>Memory</span>
+        <span>92 / 100</span>
+      </div>
+      <div class="score-item verbal">
+        <span>Verbal</span>
+        <span>61 / 100</span>
+      </div>
+      <div class="score-item visual">
+        <span>Visual</span>
+        <span>72 / 100</span>
+      </div>
+      <button>Continue</button>
+    </div>
+  </div>
+</body>
+</html>
