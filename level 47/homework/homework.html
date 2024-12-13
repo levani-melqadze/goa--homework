@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: #635cff;
+            padding: 20px;
+        }
+
+        .card-header img {
+            width: 100%;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            margin: 10px 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #6b6b6b;
+            margin: 10px 0 20px;
+        }
+
+        .plan {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .plan span {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .plan a {
+            color: #635cff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .card-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #635cff;
+            color: #ffffff;
+        }
+
+        .btn-secondary {
+            background-color: #f4f4f9;
+            color: #635cff;
+            border: 1px solid #635cff;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <img src="music-illustration.png" alt="Music Illustration">
+        </div>
+        <div class="card-content">
+            <h2>Order Summary</h2>
+            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            <div class="plan">
+                <span>Annual Plan</span>
+                <span>$59.99/year</span>
+                <a href="#">Change</a>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary">Proceed to Payment</button>
+            <button class="btn btn-secondary">Cancel Order</button>
+        </div>
+    </div>
+</body>
+</html>34
