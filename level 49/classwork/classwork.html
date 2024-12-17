@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Foundations Card</title>
+    <style>
+      
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7ce46; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: left;
+        }
+
+   
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+    
+        .card-content {
+            padding: 16px;
+        }
+
+        .card .badge {
+            display: inline-block;
+            background-color: #f7ce46;
+            color: #000;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin: 8px 0;
+            color: #000;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        .card-footer {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-footer img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .author {
+            font-size: 12px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="Screenshot 2024-12-15 153200.png" alt="Card Image">
+        <div class="card-content">
+            <div class="badge">Learning</div>
+            <p style="font-size: 12px; margin: 0;">Published 21 Dec 2023</p>
+            <h2>HTML & CSS Foundations</h2>
+            <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+            <div class="card-footer">
+                <img src="https://via.placeholder.com/32" alt="Author Image">
+                <div class="author">Greg Hooper</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
