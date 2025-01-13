@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Ticket</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .ticket {
+            width: 350px;
+            border: 2px dashed #333;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+        .ticket img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .ticket h2 {
+            margin: 0;
+            color: #333;
+        }
+        .ticket p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .qr-code {
+            margin-top: 15px;
+        }
+        .qr-code img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <img src="Screenshot 2025-01-13 234948.png" alt="Attendee Picture">
+        <h2>John Doe</h2>
+        <p>Conference: Web Dev 2025</p>
+        <p>Date: 15th Jan 2025</p>
+        <p>Seat: A12</p>
+        <div class="qr-code">
+            <img src="https://via.placeholder.com/100" alt="QR Code">
+        </div>
+    </div>
+</body>
+</html>
+
