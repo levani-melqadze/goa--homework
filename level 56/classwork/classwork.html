@@ -1,0 +1,114 @@
+<!--translate: გადაადგილებს ელემენტს სივრცეში. მაგალითად, translateX(50px) გადაადგილებს ელემენტს მარჯვნივ 50 პიქსელით, ხოლო translateY(-20px) გადაადგილებს მას ზემოთ 20 პიქსელით.
+
+scale: ცვლის ელემენტის ზომას. მაგალითად, scale(2) ზრდის ელემენტის ზომას 2-ჯერ, ხოლო scale(0.5) ამცირებს მას ნახევრად.
+
+rotate: ატრიალებს ელემენტს კონკრეტული გრადუსით. მაგალითად, rotate(180deg) აბრუნებს ელემენტს 180 გრადუსით საათის ისრის მიმართულებით.-->
+
+
+
+<div class="move-right"></div>
+
+<style>
+  .move-right {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transition: transform 0.3s;
+  }
+
+  .move-right:hover {
+    transform: translateX(50px);
+  }
+</style>
+
+
+
+
+<div class="move-right"></div>
+
+<style>
+  .move-right {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    
+  }
+
+  .move-right:hover {
+    transform: translateX(50px);
+  }
+</style>
+
+
+
+
+<div class="grow-double"></div>
+
+<style>
+  .grow-double {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    transition: transform 0.3s;
+  }
+
+  .grow-double:hover {
+    transform: scale(2);
+  }
+</style>
+
+
+
+
+<div class="grow-shrink"></div>
+
+<style>
+  .grow-shrink {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    transition: transform 0.3s;
+  
+  }
+
+  .grow-shrink:active {
+    transform: scale(1.2);
+  }
+</style>
+
+
+
+
+<div class="rotate-180"></div>
+
+<style>
+  .rotate-180 {
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    transition: transform 0.3s;
+  }
+
+  .rotate-180:hover {
+    transform: rotate(180deg);
+  }
+</style>
+
+
+
+
+<div class="delayed-action"></div>
+
+<style>
+  .delayed-action {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    transition: background-color 1s 2s, transform 5s 2s;
+  }
+
+  .delayed-action:hover {
+    background-color: lightyellow;
+    transform: rotate(180deg);
+  }
+</style>
