@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Styling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            display: block;
+            width: 300px;
+            padding: 10px;
+            margin: 10px auto;
+            border: 2px solid gray;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none; /* outline მოშორება */
+            transition: border 0.3s;
+        }
+        /* სხვადასხვა ტიპის input-ებისთვის */
+        input[type="text"]:focus {
+            border-color: blue;
+        }
+        input[type="email"]:focus {
+            border-color: green;
+        }
+        input[type="password"]:focus {
+            border-color: red;
+        }
+        input[type="number"]:focus {
+            border-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ფორმის ელემენტები</h2>
+    <form>
+        <input type="text" placeholder="შეიყვანეთ ტექსტი">
+        <input type="email" placeholder="შეიყვანეთ ელ. ფოსტა">
+        <input type="password" placeholder="შეიყვანეთ პაროლი">
+        <input type="number" placeholder="შეიყვანეთ რიცხვი">
+    </form>
+
+</body>
+</html>
