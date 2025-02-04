@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სახელის შემოტანა</title>
+</head>
+<body>
+    <label for="nameInput">სახელი:</label>
+    <input type="text" id="nameInput" placeholder="შემოიტანეთ თქვენი სახელი">
+    <button onclick="showName()">Submit</button>
+
+    <script>
+       
+        function showName() {
+          
+            const name = document.getElementById('nameInput').value;
+
+            console.log("მომხმარებლის სახელია: " + name);
+        }
+    </script>
+</body>
+</html>
