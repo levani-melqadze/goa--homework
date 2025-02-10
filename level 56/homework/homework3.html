@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .color-change {
+        .rotate-scale {
             width: 100px;
             height: 100px;
-            background-color: red;
-            animation: changeColor 3s forwards;
+            background-color: purple;
+            animation: rotateScale 4s forwards;
         }
 
-        @keyframes changeColor {
+        @keyframes rotateScale {
             0% {
-                background-color: red;
+                transform: rotate(0deg) scale(1);
             }
             100% {
-                background-color: green;
+                transform: rotate(360deg) scale(1.5);
             }
         }
     </style>
 </head>
 <body>
-    <div class="color-change"></div>
+    <div class="rotate-scale"></div>
 </body>
 </html>

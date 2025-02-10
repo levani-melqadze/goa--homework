@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .color-change {
+        .rotate-circle {
             width: 100px;
             height: 100px;
             background-color: red;
-            animation: changeColor 3s forwards;
+            border-radius: 50%;
+            animation: rotateCircle 1s linear infinite;
         }
 
-        @keyframes changeColor {
+        @keyframes rotateCircle {
             0% {
-                background-color: red;
+                transform: rotate(0deg);
             }
             100% {
-                background-color: green;
+                transform: rotate(360deg);
             }
         }
     </style>
 </head>
 <body>
-    <div class="color-change"></div>
+    <div class="rotate-circle"></div>
 </body>
 </html>

@@ -1,1 +1,0 @@
-#codewarsebi iyo da gavakete

@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .color-change {
+        .move-right {
             width: 100px;
             height: 100px;
-            background-color: red;
-            animation: changeColor 3s forwards;
+            background-color: blue;
+            animation: moveRight 2s forwards;
         }
 
-        @keyframes changeColor {
+        @keyframes moveRight {
             0% {
-                background-color: red;
+                transform: translateX(0);
             }
             100% {
-                background-color: green;
+                transform: translateX(200px);
             }
         }
     </style>
 </head>
 <body>
-    <div class="color-change"></div>
+    <div class="move-right"></div>
 </body>
 </html>
